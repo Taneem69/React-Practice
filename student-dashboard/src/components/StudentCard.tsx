@@ -1,4 +1,6 @@
 import type {Student} from "../App"
+import CourseTag from "./CourseTag";
+import StatBadge from "./StatBadge";
 import "./StudentCard.css";
 
 export default function StudentCard(props:{student: Student}){
@@ -13,7 +15,20 @@ export default function StudentCard(props:{student: Student}){
 
             <p className="student-id">ID: {student.id}</p>
             <p className="student-major">Major: {student.major}</p>
-            <p className="student-gpa" style={{backgroundColor: gpaColor}}>GPA: {student.gpa}</p>
+
+            <div className="courses-container">
+                {student.courses.map((course, index)=>
+                    <CourseTag key={index} courseName={course} color={student.courseColors[index]}/>
+                )}
+            </div>
+
+
+            <div className="stats-container">
+                <StatBadge label="GPA" value={student.gpa.toString()} color={gpaColor}/>
+
+                <StatBadge label="Credits" value={student.gpa.toString()}/>
+
+            </div>
             
         </div>
     )
