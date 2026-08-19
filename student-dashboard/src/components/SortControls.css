@@ -1,0 +1,27 @@
+.sort-controls {
+  display: flex;
+  gap: var(--spacing-small);
+  justify-content: center;
+  margin-bottom: var(--spacing-large);
+  flex-wrap: wrap;
+}
+
+.sort-btn {
+  padding: var(--spacing-small) var(--spacing-medium);
+  border: 2px solid var(--color-background);
+  background: var(--color-card-bg);
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: var(--font-size-small);
+  transition: all 0.3s;
+}
+
+.sort-btn:hover {
+  border-color: var(--color-secondary);
+}
+
+.sort-btn.active {
+  background: var(--color-secondary);
+  color: white;
+  border-color: var(--color-secondary);
+}
