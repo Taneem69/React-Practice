@@ -1,0 +1,42 @@
+.student-card {
+  background-color: var(--color-card-bg);
+  border-radius: var(--spacing-medium);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: var(--spacing-large);
+  text-align: center;
+  width: 200px;
+  transition: transform 0.2s ease;
+}
+
+.student-card:hover {
+  transform: translateY(-4px);
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: var(--spacing-small);
+}
+
+.student-name {
+  margin: var(--spacing-small) 0;
+  font-size: var(--font-size-large);
+}
+
+.student-id,
+.student-major {
+  margin: var(--spacing-small) 0;
+  font-size: var(--font-size-small);
+}
+
+.student-gpa {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: var(--font-size-small);
+  margin-top: var(--spacing-small);
+}

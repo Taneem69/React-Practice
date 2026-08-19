@@ -20,7 +20,7 @@ function App() {
       {id: "123", name: "Taneem", major: "Software Engineering", gpa: 3.96, avatar: getAvatar(3)},
       {id: "123", name: "Taneem", major: "Software Engineering", gpa: 3.96, avatar: getAvatar(3)},
       {id: "123", name: "Taneem", major: "Software Engineering", gpa: 3.96, avatar: getAvatar(3)},
-      {id: "123", name: "Taneem", major: "Software Engineering", gpa: 3.96, avatar: getAvatar(3)},
+      {id: "123", name: "Taneem", major: "Software Engineering", gpa: 2.96, avatar: getAvatar(3)},
       {id: "123", name: "Taneem", major: "Software Engineering", gpa: 3.96, avatar: getAvatar(3)},
 
     ];

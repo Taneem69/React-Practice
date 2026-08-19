@@ -25,6 +25,21 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+    /* 5 custom properties as required */
+  --color-primary: #2c3e50;
+  --color-secondary: #3498db;
+  --color-background: #f4f6f9;
+  --color-card-bg: #ffffff;
+  --color-gpa-high: #27ae60;
+
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 24px;
+
+  --font-size-small: 0.875rem;
+  --font-size-medium: 1rem;
+  --font-size-large: 1.25rem;
+
   @media (max-width: 1024px) {
     font-size: 16px;
   }
@@ -64,6 +79,9 @@
 
 body {
   margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-primary);
 }
 
 h1,

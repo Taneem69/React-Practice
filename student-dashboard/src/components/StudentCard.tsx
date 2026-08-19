@@ -1,4 +1,5 @@
 import type {Student} from "../App"
+import "./StudentCard.css";
 
 export default function StudentCard(props:{student: Student}){
     const{student}=props;
