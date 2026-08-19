@@ -5,6 +5,10 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import StudentCard from './components/StudentCard'
 
+import DashboardHeader from './components/DashboardHeader'
+
+import StatBadge from './components/StatBadge'
+
 export type Student={
   id: string,
   name: string,
@@ -20,24 +24,43 @@ function App() {
 
 
     const students: Student[]=[
-      {id: "123", name: "Taneem", major: "Software Engineering", gpa: 3.96, avatar: getAvatar(3)},
-      {id: "123", name: "Taneem", major: "Software Engineering", gpa: 3.96, avatar: getAvatar(3)},
-      {id: "123", name: "Taneem", major: "Software Engineering", gpa: 3.96, avatar: getAvatar(3)},
-      {id: "123", name: "Taneem", major: "Software Engineering", gpa: 2.96, avatar: getAvatar(3)},
-      {id: "123", name: "Taneem", major: "Software Engineering", gpa: 3.96, avatar: getAvatar(3)},
+      {id: "123", name: "Taneem", major: "Software Engineering", gpa: 3.96, credits: 120, avatar: getAvatar(3), courses: ["Advance Web Technologies", "Advance .Net", "SQT"], courseColors: ["#3498db", "#2ecc71", "#e74c3c"]},
+
+      {id: "123", name: "Taneem", major: "Software Engineering", gpa: 3.96, credits: 120, avatar: getAvatar(3), courses: ["Advance Web Technologies", "Advance .Net", "SQT"], courseColors: ["#3498db", "#2ecc71", "#e74c3c"]},
+
+
+      {id: "123", name: "Taneem", major: "Software Engineering", gpa: 2.96, credits: 120, avatar: getAvatar(3), courses: ["Advance Web Technologies", "Advance .Net", "SQT"], courseColors: ["#3498db", "#2ecc71", "#e74c3c"]},
+
+
+      {id: "123", name: "Taneem", major: "Software Engineering", gpa: 3.96, credits: 120, avatar: getAvatar(3), courses: ["Advance Web Technologies", "Advance .Net", "SQT"], courseColors: ["#3498db", "#2ecc71", "#e74c3c"]},
+
+
+      {id: "123", name: "Taneem", major: "Software Engineering", gpa: 3.96, credits: 120, avatar: getAvatar(3), courses: ["Advance Web Technologies", "Advance .Net", "SQT"], courseColors: ["#3498db", "#2ecc71", "#e74c3c"]},
+
+      
 
     ];
+
+    const totalStudents=students.length;
+
+    const avgGPA=(students.reduce((sum, s)=> sum+s.gpa, 0)/totalStudents).toFixed(2);
 
   return (
 
     <>
-      <div className="app">
-        <h1 className="dashboard-title">Student Dashboard</h1>
-        <div className="card-grid"> {students.map((student)=>(
-          <StudentCard key={student.id} student={student}>
-          </StudentCard>
-        )
-        )}</div>
+      <DashboardHeader/>
+      <div className="dashboard-stats">
+        <StatBadge label="Total Students" value={totalStudents.toString()}/>
+
+        <StatBadge label="Average GPA" value={avgGPA} color={"var(--color-gpa-high)"}/>
+
+      </div>
+
+
+      <div className='card-grid'>
+        {students.map((student)=>
+          <StudentCard key={student.id} student={student}/>
+        )}
       </div>
     </>
   )

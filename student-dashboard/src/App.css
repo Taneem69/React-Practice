@@ -186,14 +186,15 @@
 .app {
   max-width: 1200px;
   margin: 0 auto;
-  padding: var(--spacing-large);
+  padding: 0 var(--spacing-large);
 }
 
-.dashboard-title {
-  text-align: center;
-  color: var(--color-primary);
-  font-size: 2rem;
+.dashboard-stats {
+  display: flex;
+  gap: var(--spacing-large);
+  justify-content: center;
   margin-bottom: var(--spacing-large);
+  flex-wrap: wrap;
 }
 
 .card-grid {
