@@ -20,7 +20,7 @@ export type Student={
   courseColors: string[]
 }
 function App() {
-    const getAvatar=(id:number)=>"https://i.pravatar.cc/150?img=${id}";
+    const getAvatar=(id:number)=>"https://static01.nyt.com/images/2016/09/28/us/28xp-pepefrog/28xp-pepefrog-articleLarge.jpg?quality=75&auto=webp";
 
 
     const students: Student[]=[
