@@ -182,3 +182,23 @@
     border-right-color: var(--border);
   }
 }
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-large);
+}
+
+.dashboard-title {
+  text-align: center;
+  color: var(--color-primary);
+  font-size: 2rem;
+  margin-bottom: var(--spacing-large);
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-large);
+  justify-content: center;
+}
