@@ -1,0 +1,44 @@
+.dashboard-header {
+  background-color: var(--color-nav-bg);
+  color: var(--color-nav-text);
+  padding: var(--spacing-medium) var(--spacing-large);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-medium);
+  margin-bottom: var(--spacing-xl);
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-title {
+  margin: 0;
+  font-size: var(--font-size-xl);
+}
+
+.header-tagline {
+  margin: 0;
+  font-size: var(--font-size-small);
+  opacity: 0.8;
+}
+
+.header-nav {
+  display: flex;
+  gap: var(--spacing-large);
+}
+
+.nav-link {
+  color: var(--color-nav-text);
+  text-decoration: none;
+  padding: var(--spacing-small) var(--spacing-medium);
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
