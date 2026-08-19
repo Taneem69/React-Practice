@@ -2,7 +2,7 @@ import type {Student} from "../App"
 
 export default function StudentCard(props:{student: Student}){
     const{student}=props;
-    const gpaColor = Number(student.gpa) >= 3.5 ? "var(--color-gpa-high)" : "#e74c3c";
+    const gpaColor = student.gpa >= 3.5 ? "var(--color-gpa-high)" : "#e74c3c";
 
     return (
         <div className="student-card">
