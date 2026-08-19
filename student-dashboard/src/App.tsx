@@ -10,7 +10,10 @@ export type Student={
   name: string,
   major: string,
   gpa: number,
-  avatar: string
+  avatar: string,
+  credits: number,
+  courses: string[],
+  courseColors: string[]
 }
 function App() {
     const getAvatar=(id:number)=>"https://i.pravatar.cc/150?img=${id}";

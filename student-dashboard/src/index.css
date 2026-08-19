@@ -25,20 +25,28 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-    /* 5 custom properties as required */
+  /* Colors */
   --color-primary: #2c3e50;
   --color-secondary: #3498db;
   --color-background: #f4f6f9;
   --color-card-bg: #ffffff;
+  --color-text: #2c3e50;
   --color-gpa-high: #27ae60;
+  --color-gpa-low: #e74c3c;
+  --color-nav-bg: #2c3e50;
+  --color-nav-text: #ffffff;
 
+  /* Spacing */
   --spacing-small: 8px;
   --spacing-medium: 16px;
   --spacing-large: 24px;
+  --spacing-xl: 32px;
 
+  /* Font sizes */
   --font-size-small: 0.875rem;
   --font-size-medium: 1rem;
   --font-size-large: 1.25rem;
+  --font-size-xl: 1.5rem;
 
   @media (max-width: 1024px) {
     font-size: 16px;
@@ -81,7 +89,7 @@ body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--color-background);
-  color: var(--color-primary);
+  color: var(--color-text);
 }
 
 h1,
