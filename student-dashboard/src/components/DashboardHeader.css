@@ -26,6 +26,15 @@
   opacity: 0.8;
 }
 
+.favorites-badge {
+  margin-top: var(--spacing-small);
+  font-size: var(--font-size-small);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 4px 12px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
 .header-nav {
   display: flex;
   gap: var(--spacing-large);
@@ -37,8 +46,18 @@
   padding: var(--spacing-small) var(--spacing-medium);
   border-radius: 4px;
   transition: background-color 0.3s;
+  background: none;
+  border: none;
+  font-size: var(--font-size-medium);
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .nav-link:hover {
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-link.active {
+  background-color: var(--color-secondary);
+  color: white;
 }
