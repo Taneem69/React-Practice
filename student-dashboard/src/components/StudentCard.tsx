@@ -4,7 +4,7 @@ import CourseTag from "./CourseTag";
 import StatBadge from "./StatBadge";
 import "./StudentCard.css";
 
-function StudentCard(props: {student: Student; onFavoriteToggle: (studentId: string) => void; isFavorite: boolean;}) {
+export default function StudentCard(props: {student: Student; onFavoriteToggle: (studentId: string) => void; isFavorite: boolean;}) {
   const { student, onFavoriteToggle, isFavorite } = props;
 
  
@@ -36,5 +36,3 @@ function StudentCard(props: {student: Student; onFavoriteToggle: (studentId: str
     </div>
   );
 }
-
-export default StudentCard;
