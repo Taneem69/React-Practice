@@ -12,12 +12,44 @@
   transform: translateY(-4px);
 }
 
+.card-header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
 .avatar {
   width: 80px;
   height: 80px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: var(--spacing-small);
+}
+
+.favorite-btn {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: var(--color-card-bg);
+  border: 2px solid var(--color-background);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.favorite-btn:hover {
+  transform: scale(1.1);
+}
+
+.favorite-btn.favorite {
+  border-color: #ff6b6b;
+  background: #fff0f0;
 }
 
 .student-name {
