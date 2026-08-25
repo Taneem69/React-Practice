@@ -1,17 +1,27 @@
-import "./SortControls.css";
+import { useStudents } from '../contexts/StudentContext';
+import './SortControls.css';
 
-type SortOption = "default" | "name" | "gpa";
+export default function SortControls() {
+  const { sortBy, setSortBy } = useStudents();
 
-export default function SortControls(props: {sortBy: SortOption; onSortChange: (sort: SortOption) => void;}) {
   return (
     <div className="sort-controls">
-      <button className={`sort-btn ${props.sortBy === "default" ? "active" : ""}`} onClick={() => props.onSortChange("default")}>
+      <button
+        className={`sort-btn ${sortBy === 'default' ? 'active' : ''}`}
+        onClick={() => setSortBy('default')}
+      >
         Default
       </button>
-      <button className={`sort-btn ${props.sortBy === "name" ? "active" : ""}`} onClick={() => props.onSortChange("name")}>
+      <button
+        className={`sort-btn ${sortBy === 'name' ? 'active' : ''}`}
+        onClick={() => setSortBy('name')}
+      >
         Name (A-Z)
       </button>
-      <button className={`sort-btn ${props.sortBy === "gpa" ? "active" : ""}`} onClick={() => props.onSortChange("gpa")}>
+      <button
+        className={`sort-btn ${sortBy === 'gpa' ? 'active' : ''}`}
+        onClick={() => setSortBy('gpa')}
+      >
         GPA (High-Low)
       </button>
     </div>
