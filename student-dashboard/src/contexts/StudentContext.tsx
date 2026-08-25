@@ -17,6 +17,9 @@ interface StudentContextType {
   removeStudent: (id: string) => void;
 }
 
+
+const getAvatar=(id:number)=>`https://static01.nyt.com/images/2016/09/28/us/28xp-pepefrog/28xp-pepefrog-articleLarge.jpg?quality=75&auto=webp?img=${id}`;
+
 const StudentContext = createContext<StudentContextType | undefined>(undefined);
 
 const initialStudents: Student[] = [
