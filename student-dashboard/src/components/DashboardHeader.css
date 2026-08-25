@@ -35,6 +35,28 @@
   display: inline-block;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-large);
+}
+
+.theme-toggle {
+  background: none;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--color-nav-text);
+  transition: background 0.3s;
+}
+
+.theme-toggle:hover {
+  background: rgba(255,255,255,0.1);
+}
+
 .header-nav {
   display: flex;
   gap: var(--spacing-large);
