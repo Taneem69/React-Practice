@@ -20,7 +20,11 @@ interface StudentContextType {
 const StudentContext = createContext<StudentContextType | undefined>(undefined);
 
 const initialStudents: Student[] = [
-  
+  {id: "123", name: "Taneem", major: "Software Engineering", gpa: 3.96, credits: 145, avatar: getAvatar(3), courses: ["Advance Web Technologies", "Advance .Net", "SQT"], courseColors: ["#3498db","#2ecc71", "#e74c3c"]},
+    {id: "154", name: "Sifat", major: "Network Engineering", gpa: 3.30, credits: 120, avatar: getAvatar(3), courses: ["CCNA", "Computer Networks", "Network Security"], courseColors: ["#3498db","#2ecc71", "#e74c3c"]},
+    {id: "421", name: "Progga", major: "Data Science", gpa: 2.96, credits: 100, avatar: getAvatar(3), courses: ["Introduction to Data Science", "Data Mining", "Machine Learning"], courseColors: ["#3498db","#2ecc71", "#e74c3c"]},
+    {id: "321", name: "Pritha", major: "Marketing", gpa: 3.20, credits: 100, avatar: getAvatar(3), courses: ["Finance", "MIS", "HRM"], courseColors: ["#3498db","#2ecc71", "#e74c3c"]},
+    {id: "563", name: "Ryan", major: "Information System", gpa: 3.81, credits: 142, avatar: getAvatar(3), courses: ["Machine Learning", "BGT", "NLP"], courseColors: ["#3498db","#2ecc71", "#e74c3c"]},
 ];
 
 
