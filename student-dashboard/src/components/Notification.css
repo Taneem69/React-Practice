@@ -1,0 +1,21 @@
+.notification {
+  background: var(--color-gpa-high);
+  color: white;
+  padding: var(--spacing-medium);
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: var(--spacing-medium);
+  animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
