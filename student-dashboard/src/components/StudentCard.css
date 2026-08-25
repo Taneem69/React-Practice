@@ -77,3 +77,26 @@
   gap: var(--spacing-small);
   margin-top: var(--spacing-small);
 }
+
+
+.remove-btn {
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  background: #e74c3c;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+}
+
+.remove-btn:hover {
+  transform: scale(1.1);
+}
