@@ -1,0 +1,62 @@
+.add-student-form {
+  background: var(--color-card-bg);
+  padding: var(--spacing-large);
+  border-radius: var(--spacing-medium);
+  max-width: 500px;
+  margin: var(--spacing-xl) auto;
+  border: 1px solid var(--color-border);
+}
+
+.add-student-form h2 {
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-large);
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: var(--spacing-medium);
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: var(--spacing-small);
+  color: var(--color-text);
+}
+
+.form-group input {
+  width: 100%;
+  padding: var(--spacing-small);
+  border: 2px solid var(--color-border);
+  border-radius: 4px;
+  background: var(--color-background);
+  color: var(--color-text);
+  transition: border-color 0.3s;
+}
+
+.form-group input.error {
+  border-color: var(--color-gpa-low);
+}
+
+.error-message {
+  color: var(--color-gpa-low);
+  font-size: var(--font-size-small);
+  margin-top: 4px;
+  display: block;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: var(--spacing-medium);
+  background: var(--color-secondary);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: var(--font-size-medium);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: #2980b9;
+}
